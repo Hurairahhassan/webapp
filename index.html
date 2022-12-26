@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ebdaab;
+            text-align: center;
+        }
+        h1{
+            color: #4CAF50;
+        }
+              form {
+                      width: 50%;
+                      margin: 0 auto;
+        text-align: left;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 3px;
+        padding-top: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      input[type="text"], input[type="number"], textarea {
+        width: 100%;
+        padding: 0.5em;
+        border: 1px solid #ccc;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <h1>Bio Information Form</h1>
+    
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="age">Age:</label><br />
+      <input type="number" id="age" name="age" /><br />
+      <label for="gender">Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label><br /><br />
+      <label for="bio">Bio:</label><br />
+      <textarea id="bio" name="bio" rows="5" cols="50"></textarea><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
